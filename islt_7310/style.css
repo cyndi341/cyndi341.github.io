@@ -3,33 +3,48 @@
 *Athhor:         Cyndi jennings
 **********************************************/
 
-* {
-    margin: 20px;}
-
 body {
-    border: 5px solid green;
-    padding: 20px;}
+    padding: 30px;
+    background-color: lightgoldenrodyellow;}
 
 h1 {
-    color: #006699;
+    color: #023047;
     font-size: 50px;
-    font-family: "Trebuchet MS", Verdana, sans-serif;}
+    text-align: center;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    border: 1px solid #023047;
+    background-color: #8ecae6;
+    padding: 10px;}
 
 h3 {
-    color: darkblue;
-    font-size: 28px;}
+    color: #023047;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;}
 
 h4 {
     font-size: 24px;
-    font-weight: bolder;}
+    font-weight: bolder;
+    margin-bottom: 10px;}
+
+#about h4 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;}
 
 img {
+    width: 300px;
     float: right;
-    padding: 30px;}
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #023047;}
 
-#edu,#exp {
-    clear: right;}
+#edu, #exp {clear: right;}
 
+#exp li {font-size: 18px;
+    margin-left: 60px }
+    
 #edu li {
     color: darkblue;}
 
@@ -39,13 +54,17 @@ img {
 
 p {
     color: black;
-    font-size: 18px;}
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;}
 
 blockquote {
     font-size: 18px;}
 
 footer {
-    font-size: 9px;}
+    font-size: 9px;
+    border-top: 1px solid #023047;
+    padding: 5px;}
 
 a:link {
     color: forestgreen;
