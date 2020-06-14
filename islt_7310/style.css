@@ -10,12 +10,20 @@ h1 {color: #006699; font-size: 50px; font-family: "Trebuchet MS", Verdana, sans-
 h3 {color: darkblue; font-size: 28px;}
 h4 {font-size: 24px; font-weight: bolder}
 
-img {float: right;}
-.edu {clear: right;}
-.edu li {color: darkblue;}
-.exp li {color:darkslategrey; list-style: square;}
+img {float: right; padding: 30px;}
+
+#edu, #exp {clear: right;
+            margin: 30px;
+            padding: 30px;
+            border: 1px solid #000;
+            width: auto;
+            height: 200 px;}
+
+#edu li {color: darkblue;}
+#exp li {color:darkslategrey; list-style: square;}
 
 p {color:black; font-size: 18px}
+
 blockquote {font-size: 18px;}
 
 footer {font-size: 9pt}
