@@ -5,7 +5,18 @@
 
 
 
-h1 {color: #006699;}
+h1 {color: #006699; font-size: 50px; font-family: "Trebuchet MS", Verdana, sans-serif;}
+
+h3 {color: darkblue; font-size: 28px;}
+h4 {font-size: 24px; font-weight: bolder}
+
+img {float: right;}
+.edu {clear: right;}
+.edu li {color: darkblue;}
+.exp li {color:darkslategrey; list-style: square;}
+
+p {color:black; font-size: 18px}
+blockquote {font-size: 18px;}
 
 footer {font-size: 9pt}
 
