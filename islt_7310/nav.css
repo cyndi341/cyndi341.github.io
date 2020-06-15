@@ -4,30 +4,28 @@
 **********************************************/
 
 nav {
-    height: 100%;
-    width: 200px;
+    height: 36px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #113245;
-    padding-top: 100px;}
-
-nav h2 {color: #e7e6e0;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 10px;}
+    padding-top: 40px;}
 
 nav ul {list-style-type: none;
         margin:0;
-        padding: 0;}
+        padding: 0;
+        top: 0;
+        left: 0;}
 
-    
-nav a {padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
+nav a {
+    float: left;
+    display: block;
     color: #e7e6e0;
-    display: block;}
-
+    padding: 4px 30px 4px 30px;
+    text-decoration: none;
+    font-size: 25px;    
+    }
 
 nav a:hover {color: #f2b531;}
 nav a.active {background-color: #ed5958;}
