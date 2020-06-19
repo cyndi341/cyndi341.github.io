@@ -4,31 +4,53 @@
 **********************************************/
 
 nav {
-    height: 36px;
-    width: 100%;
-    position: fixed;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 0;
-    background-color: #113245;
-    padding-top: 40px;}
+    height: 11%;
+    width: 100%;
+    background-color: #023047;
+    position: fixed;}
 
-nav ul {list-style-type: none;
-        margin:0;
-        padding: 0;
-        top: 0;
-        left: 0;}
-
-nav a {
+nav ul li {
     float: left;
-    display: block;
-    color: #e7e6e0;
-    padding: 4px 30px 4px 30px;
-    text-decoration: none;
-    font-size: 25px;    
-    }
+    width: 170px;
+    list-style-type: none;
+    position: relative;
+}
 
-nav a:hover {color: #f2b531;}
-nav a.active {background-color: #ed5958;}
+nav li a {
+    display:inline-block;
+    width: 90%;
+    line-height: 200%;
+    text-align: center;
+    color: #e7e6e0;
+    text-decoration: none;
+    background-color: #023047;
+    font-size: 1.2em;
+    padding: 1%;
+    border-radius: 50%;}
+
+#drop {display: none;
+        position: relative;
+        left: 0;
+        top: 100%}
+
+#drop li a {background-color: #023047;
+            padding: 2%;
+            margin-top: 0;
+            border-radius: 0;}
+
+nav li:hover #drop {display:block;}
+
+nav li a:hover{color: #fab531;}    
+    
+nav a.active {background-color: #ed5958;
+                font-size: 1.4em;}    
+    
+    
+ 
   
     
    
