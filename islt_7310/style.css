@@ -4,86 +4,150 @@
 **********************************************/
 
 body {
-    padding: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 83%;
+    margin: 0 auto;
+    padding: .5% 3% 0% 3%;
     background-color: #e7e6e0;
-    position: relative;}
+    position: center;}  
 
-h1 {color: #023047;
-    font-size: 3.125em; 
+header {background: #023047;
+        width: 100%;    
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 13%;
+        z-index: 100;
+        border-bottom: 5px solid #03878f;}
+h1 {
+    color: #023047;
+    font-size: 3.125rem;
     text-align: center;
     font-family: "Trebuchet MS", Verdana, sans-serif;
     border: 1px solid #023047;
     background-color: #f2b531;
-    padding: .97%;
-    margin-top: 7%;}
-
-h3 {color: #023047;
+    padding: 1%;
+    margin-top: 10%;
+}
+h3 {
+    color: #023047;
     font-family: "Trebuchet MS", Verdana, sans-serif;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     padding-left: 2.14%;
     padding-right: 2.14%;
     padding-bottom: 1%;
-    border-bottom: 2px solid #023047;}
-    
-
-h4 {font-size: 1.50em;
+    border-bottom: 2px solid #023047;
+}
+h4 {
+    font-size: 1.50rem;
     font-family: "Trebuchet MS", Verdana, sans-serif;
     font-weight: bolder;
     margin-bottom: 1%;
-    margin-top: 2%;}
-
-#about {border: 2px solid #023047;
-    margin-top: 1.5%;}
-
-#about h4 {text-align: center;}
-
-#about p {font-size: 1.4em;}
-
-img {width: 300px;
+    margin-top: 2%;
+}
+#about {
+    margin-top: 1.5%;
+}
+#about h4 {
+    text-align: center;
+}
+#about p {
+    font-size: 1.4rem;
+}
+img {
+    width: 300px;
     float: right;
     padding: 2%;
     margin: 2% 0% 2% 3%;
     background-color: #03878f;
-    border: 1px solid #023047;}
-
-#edu, #exp, #quote {clear: right;
-            padding-left: 6%;
-            }
-
-
-#edu li {font-size: 1.2em;
-         color: #023047;}
-
-#exp li {font-size: 1.3em;
-        margin-left: 10%;
-        color: #03878f;
-        list-style: square;}
-    
-p {color: black;
-   font-size: 1.25em;
-   margin-left: 5%;
-   margin-right: 5%;}
-
-p:first-of-type::first-letter {font-size: 2em;}
-p:nth-of-type(n+1){text-indent: 2%;}
-
-blockquote {font-size: 1.125em;}
-
-footer {font-size: 12pt;
-        border-top: 1px solid #023047;
-        padding-top: 1.5%;
-        text-align: right;}
-
-footer a:link {color: forestgreen;
-                text-decoration: none;
-                font-size: 10pt;}
-
-footer a:hover, a:focus {color: indianred;}
+    border: 1px solid #023047;
+}
+aside {
+    width: 24%;
+    clear: right;
+    float: left;
+    padding: .5%;
+    margin-top: 4%;
+    border: 1px solid #023047;
+    text-align: center;
+}
+blockquote {
+    font-size: 1.75rem;
+}
+#edu,
+#exp {
+    margin-top: 2%;
+    width: 68%;
+    float: right;
+}
+#edu li {
+    font-size: 1.2rem;
+    color: #023047;
+}
+#exp li {
+    font-size: 1.3rem;
+    margin-left: 10%;
+    color: #03878f;
+    list-style: square;
+}
+p {
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+p:first-of-type::first-letter {
+    font-size: 2rem;
+}
+p:nth-of-type(n+1) {
+    text-indent: 2%;
+}
+footer {
+    width: 100%;
+    clear: both;
+    font-size: 1.1rem;
+    border-top: 1px solid #023047;
+    padding-top: 1.5%;
+    text-align: right;
+}
+footer a:link {
+    color: forestgreen;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+footer a:hover,
+a:focus {
+    color: indianred;}
 
 footer a:visited, a:active {color: darkred;}
 
 
 
+/*change floats for screens smaller then 900px*/
+@media (max-width: 900px) {
+    img {float: none;
+        width: 40%;
+        padding: 2%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #03878f;
+        border: 1px solid #023047;}
+    
+    aside, #edu, #exp  {float: none;
+                        width: 100%;}
+}
+
+/*change font sizes for screens smaller than 700px*/
+@media (max-width: 700px) {    
+    h1 {font-size: 2.125rem;
+        margin-top: 15%;}
+    h3 {font-size: 1.5rem;}
+    #about p, p, #edu li, #exp li, footer {font-size: 1rem;
+    }
+    
+}
+
+
+    
+   
 
