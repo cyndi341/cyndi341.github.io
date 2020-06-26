@@ -10,14 +10,7 @@ body {
     background-color: #e7e6e0;
     position: center;}  
 
-header {background: #023047;
-        width: 100%;    
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 13%;
-        z-index: 100;
-        border-bottom: 5px solid #03878f;}
+
 h1 {
     color: #023047;
     font-size: 3.125rem;
@@ -26,7 +19,7 @@ h1 {
     border: 1px solid #023047;
     background-color: #f2b531;
     padding: 1%;
-    margin-top: 10%;
+    margin-top: 105px;
 }
 h3 {
     color: #023047;
@@ -122,10 +115,11 @@ footer a:visited, a:active {color: darkred;}
 
 
 
-/*change floats for screens smaller then 900px*/
-@media (max-width: 900px) {
+/*change floats & font sizes for screens smaller then 1031px*/
+@media (max-width: 1070px) {
     img {float: none;
-        width: 40%;
+        width: 60%;
+        max-width: 300px;
         padding: 2%;
         display: block;
         margin-right: auto;
@@ -135,12 +129,8 @@ footer a:visited, a:active {color: darkred;}
     
     aside, #edu, #exp  {float: none;
                         width: 100%;}
-}
 
-/*change font sizes for screens smaller than 700px*/
-@media (max-width: 700px) {    
-    h1 {font-size: 2.125rem;
-        margin-top: 15%;}
+    h1 {font-size: 2.125rem;}
     h3 {font-size: 1.5rem;}
     #about p, p, #edu li, #exp li, footer {font-size: 1rem;
     }
