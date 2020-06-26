@@ -113,6 +113,36 @@ a:focus {
 
 footer a:visited, a:active {color: darkred;}
 
+/*contact form styling*/
+
+#contact_form {margin-left: 10%;
+                }
+
+label {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #submit_button {
+    background-color: #ed5958;
+    height: 32px;
+    width: 140px;
+    color: white;
+    font-weight: bold;
+
+  }
+  
+  input, textarea {
+    background-color: #D3D3D3;
+    color: black;
+    width: 270px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 2px 2px #696969;
+  }
+
+  #message {height: 80px;}
+
 
 
 /*change floats & font sizes for screens smaller then 1031px*/

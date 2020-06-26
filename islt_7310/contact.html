@@ -4,17 +4,17 @@
 
 *****************************************************************************
 
-Title:  Resume Page
+Title:  Contact Page
 
-Use:  This page provides a link to my resume
+Use:  This page provides a space for a contact form
 
 Author:  Cyndi Jennings
 
 School/Term:  University of Missouri, Summer 2020
 
-Developed: June 12, 2020
+Developed: June 26, 2020
 
-Tested:  June 19, 2020; Tested on Firefox, Chrome, Edge and Opera browsers.
+Tested:  
 
 ******************************************************************************
 
@@ -22,26 +22,11 @@ Tested:  June 19, 2020; Tested on Firefox, Chrome, Edge and Opera browsers.
 
 <head>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <style>
-        main a {
-            color: #023047;
-            color: forestgreen;
-            text-decoration: none;
-            font-size: 30px;
-        }
-        
-        main a:hover {
-            color: indianred;
-        }
-        
-        p {
-            text-align: center;
-            font-size: 30px;
-            font-family: "Trebushet MS", Verdana, sans-serif;
-        }
+       
 
     </style>
 </head>
@@ -52,7 +37,7 @@ Tested:  June 19, 2020; Tested on Firefox, Chrome, Edge and Opera browsers.
        <a href="#" id="menu_icon"></a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="resume.html">Resume</a></li>
+            <li><a  href="resume.html">Resume</a></li>
             <li><a href="#background.html">Background</a></li>
             <li><a href="experience.html">Experience▾</a>
                     <ul id="drop">
@@ -62,17 +47,43 @@ Tested:  June 19, 2020; Tested on Firefox, Chrome, Edge and Opera browsers.
                     </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
     
-        <h1>Resume
-        </h1>
+        <h1>Contact Me</h1>
+
+        <h2>Feel free to contact me using the form below!</h2>
+
+        <div id="after_submit">
+
+        </div>
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        
+        <div class="row1">
+            <label for="name">Your name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" /><br />
+        </div>
+
+        <div class="row2">
+            <label for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" /><br />
+        </div>
+
+        <div class="row3">
+            <label for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" ></textarea><br />
+        </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+
+</form>
     
 
     <main>
-        <p>Here is a link to my <a href="docs/Jennings_Resume.pdf">Resume</a> </p>
+        <p> </p>
     </main>
 
     <footer> &copy; Copyright 2020, Cyndi Jennings, <a href="mailto:jenningsc@missouri.edu">Jenningsc@missouri.edu</a> </footer>
