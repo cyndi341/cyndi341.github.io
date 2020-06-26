@@ -3,22 +3,15 @@
 *Athhor:         Cyndi jennings
 **********************************************/
 
-nav {
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    height: 11%;
-    width: 100%;
-    background-color: #023047;
-    position: fixed;}
 
-nav ul li {
-    float: left;
-    width: 170px;
-    list-style-type: none;
-    position: relative;
-}
+
+nav ul {float: left;
+        padding-left: 3%;
+        }
+
+nav ul li {float: left;
+        width: 170px;
+        list-style-type: none;}
 
 nav li a {
     display:inline-block;
@@ -28,28 +21,74 @@ nav li a {
     color: #e7e6e0;
     text-decoration: none;
     background-color: #023047;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 1%;
     border-radius: 50%;}
 
 #drop {display: none;
-        position: relative;
-        left: 0;
-        top: 100%}
+        position: relative;}
 
 #drop li a {background-color: #023047;
             padding: 2%;
             margin-top: 0;
             border-radius: 0;}
 
-nav li:hover #drop {display:block;}
+nav li:hover #drop {display: block;}
 
 nav li a:hover{color: #fab531;}    
     
 nav a.active {background-color: #ed5958;
-                font-size: 1.4em;}    
+                font-size: 1.4rem;}   
+
+/*icon for hidden menu*/
+#menu_icon {
+        background: url(images/icons8-menu-48.png);
+        display: hidden;
+        width: 48px;
+        height: 48px;
+        
+}
+
+/*change navbar font-size and padding to continue to fit on one line*/
+@media (max-width: 1070px) {
+    nav ul {padding-left: 1%;}
+    nav li a {font-size: 1.0rem;
+                }
+    nav a.active {font-size: 1.0rem;}
+}
+/*sizing for screens smaller then 700px*/   
+@media (max-width: 700px) {
+    header {position: absolute;
+            height: 6%;}
     
+    #menu_icon {display: inline-block;}
     
+    nav ul, nav:active ul a {
+        display: none;
+        position: absolute;
+        background: #023047;
+        top: 15px;
+        width: 40%;}
+    
+    nav:hover ul {display: block;}
+    
+    nav li {text-align: center;
+            margin: 2px;}
+    
+    #drop {display: none;
+        position: absolute;
+        left: 155px;
+        top: 160px;}
+
+    #drop li a {background-color: #03878f;
+            margin-top: -15px;
+            border-radius: 0;}
+
+    
+
+    
+}
+  
  
   
     
