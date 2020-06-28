@@ -121,7 +121,7 @@ footer a:hover, a:focus {color: #ed5958;}
 
 footer a:visited, a:active {color: darkred;}
 
-#reflect {max-width: 800px;
+#reflect {max-width: 1000px;
     height: auto;
     margin: 0 auto;}
 
@@ -129,7 +129,7 @@ footer a:visited, a:active {color: darkred;}
 #experience h3 {position:relative;}
 h3 span{position: absolute; top: -120px;}
 
-#experience {max-width: 800px;
+#experience {max-width: 1000px;
             height: auto;
             margin: 0 auto;}
 
@@ -203,7 +203,8 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
 
     h1 {font-size: 2.125rem;}
     h3 {font-size: 1.5rem;}
-    #about p, p, #edu li, #exp li, footer {font-size: 1rem;
+    h5 {font-size: 1.25rem;}
+    #about p, p, #edu li, #exp li, footer, #experience li, .employdate {font-size: 1rem;
     }
     
 }
