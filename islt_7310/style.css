@@ -171,6 +171,13 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
     
 }
 
+/*footer change for screens smaller then 700px*/   
+@media (max-width: 900px) {
+  .footer-flex {flex-flow: column nowrap;}
+  #cr {padding-left: 15px;}
+  footer a:link {padding-left: 15px;}
+}
+
 
 
 
