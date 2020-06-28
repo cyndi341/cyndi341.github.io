@@ -3,7 +3,7 @@
 *Athhor:         Cyndi jennings
 **********************************************/
 
-header {background: #023047;
+header {background: #1a2631;
         width: 100%;    
         top: 0;
         left: 0;
@@ -13,20 +13,22 @@ header {background: #023047;
         border-bottom: 5px solid #03878f;}
 
 nav ul {float: left;
-        padding-left: 3%;}
+        padding-left: 8%;}
 
 nav ul li {float: left;
         width: 170px;
         list-style-type: none;}
 
 nav li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
     display:inline-block;
     width: 90%;
     line-height: 200%;
     text-align: center;
     color: #e7e6e0;
     text-decoration: none;
-    background-color: #023047;
+    background-color: #1a2631;
     font-size: 1.2rem;
     padding: 1%;
     border-radius: 50%;}
@@ -34,7 +36,7 @@ nav li a {
 #drop {display: none;
         position: relative;}
 
-#drop li a {background-color: #023047;
+#drop li a {background-color: #1a2631;
             padding: 2%;
             margin-top: 0;
             border-radius: 0;}
@@ -76,7 +78,7 @@ nav a.active {background-color: #ed5958;
     nav ul, nav:active ul {
         display: none;
         position: absolute;
-        background: #023047;
+        background: #1a2631;
         left: 0px;
         top: 25px;
         width: 40%;}
@@ -91,7 +93,7 @@ nav a.active {background-color: #ed5958;
               padding: 0%;}
 
     nav a.active {font-size: 1.4rem;
-                 background-color: #023047;
+                 background-color: #1a2631;
                  text-decoration: underline;}    
     
     #drop {visibility: hidden;

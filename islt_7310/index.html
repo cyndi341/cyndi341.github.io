@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-
 *****************************************************************************
 
 Title:  Home Page
@@ -17,13 +16,15 @@ Developed: June 12, 2020
 Tested:  June 26, 2020 in Firefox, Chrome, Edge, and Opera browsers
 
 ******************************************************************************
-
 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyndi Jennings - Home Page</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <script src="https://kit.fontawesome.com/c9d3f532ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 
@@ -132,7 +133,20 @@ Tested:  June 26, 2020 in Firefox, Chrome, Edge, and Opera browsers
     </section>
 
     
-    <footer> &copy; Copyright 2020, Cyndi Jennings, <a href="mailto:jenningsc@missouri.edu">Jenningsc@missouri.edu</a> </footer>
+    <footer class="footer-flex"> 
+        <div id="phone">  
+          <i class="fas fa-phone"></i>(888)888-8888
+        </div>
+  
+       <div id="cr">
+          <i class="fas fa-copyright"></i> Copyright 2020, Cyndi Jennings
+       </div> 
+          
+       <div id="info">   
+          <a href="mailto:jenningsc@missouri.edu">
+              <i class="fas fa-envelope-open"></i>      Jenningsc@missouri.edu</a>
+       </div> 
+      </footer>
 </body>
 
 </html>
