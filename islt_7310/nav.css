@@ -13,7 +13,7 @@ header {background: #1a2631;
         border-bottom: 5px solid #03878f;}
 
 nav ul {float: left;
-        padding-left: 8%;}
+        padding-left: 3%;}
 
 nav ul li {float: left;
         width: 170px;
@@ -104,6 +104,8 @@ nav a.active {background-color: #ed5958;
     #drop>ul>li>a {background-color: #03878f;
             margin-top: -15px;
             border-radius: 0;}
+
+    
 
     
 
