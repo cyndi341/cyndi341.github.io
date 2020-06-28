@@ -59,7 +59,8 @@ aside {width: 24%;
     border: 1px solid #1a2631;
     text-align: center;}
 
-blockquote {font-size: 1.75rem;}
+blockquote {font-size: 2.5rem;
+    font-family: 'Bilbo', cursive}
 
 #edu,#exp {margin-top: 2%;
             width: 68%;
@@ -179,7 +180,37 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
   footer a:link {padding-left: 15px;}
 }
 
+/*Print stylesheet */
 
+@media print {
+    * {background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        margin: 0;        }
+
+    @page {size: 8.5in 11 in; margin: .5cm;}    
+
+    header, h3 {display: none;}
+
+    h1, main, img {margin: 0;
+            border: none;
+            text-align: center;}
+
+    img {width: 150pt;
+        margin: auto;}
+
+    aside {border: none;} 
+    aside blockquote {font-size: 20pt}
+
+    #about p, p, ul {font-size: 14pt;
+                    margin: 0;}
+    h1 {font-size: 20pt;}
+    h4 {font-size: 18pt;}
+
+    #phone i, #cr, #info i {display: none;}
+
+}
 
 
 
