@@ -105,7 +105,20 @@ p:nth-of-type(n+1) {text-indent: 2%;}
     
 #phone {font-size: 1.1rem;
         color: #F2B531;
-        padding-left: 15px;}
+        padding-left: 15px;
+        }
+
+#phone i {font-size: 1.2rem;
+        transition: 2s;}
+
+#info i {font-size: 1.2rem;
+            transition: 2s;}
+
+#phone i:hover {font-size: 1.7rem;
+                transform: rotate(360deg);}
+
+#info i:hover {font-size: 1.7rem;
+                transform: rotate(360deg);}
 
 #cr {text-align: center;
     font-size: 1.1rem;
@@ -124,6 +137,8 @@ footer a:visited, a:active {color: darkred;}
 #reflect {max-width: 1000px;
     height: auto;
     margin: 0 auto;}
+
+
 
 /*experience page content specific styles*/
 #experience h3 {position:relative;}
@@ -145,9 +160,14 @@ h5 {font-size: 1.50rem;
             padding-left: 50px;
             padding-bottom: 10px;}
 
-#experience ul {max-width: 700px;
+#experience ul {max-width: 800px;
                 padding-left: 6%;}
-#experience li {font-size: 1.25rem;}
+
+#experience li {font-size: 1.25rem;
+                padding: 3px;}
+
+#experience ul li ul li{font-size: 1.1rem;
+                        padding: 2px;}
 
 /*contact form styling*/
 
@@ -204,7 +224,7 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
     h1 {font-size: 2.125rem;}
     h3 {font-size: 1.5rem;}
     h5 {font-size: 1.25rem;}
-    #about p, p, #edu li, #exp li, footer, #experience li, .employdate {font-size: 1rem;
+    #about p, p, #edu li, #exp li, footer, #experience li, .employdate, #experience ul li ul li {font-size: 1rem;
     }
     
 }
@@ -225,7 +245,7 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
         text-shadow: none !important;
         margin: 0;        }
 
-    @page {size: 8.5in 11 in; margin: .5cm;}    
+    @page {size: 8.5in 11in; margin: .5cm;}    
 
     header, h3 {display: none;}
 
