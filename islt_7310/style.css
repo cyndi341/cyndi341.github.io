@@ -1,6 +1,6 @@
 /**********************************************
 *Description:  Primary Style sheet for Cyndi Jennings Professional Website
-*Athhor:         Cyndi jennings
+*Author:         Cyndi jennings
 **********************************************/
 /* Color Theme Swatches in Hex */
 .Website-colors-1-hex { color: #E7E6E0; }
@@ -22,7 +22,8 @@ h1 {color: #1a2631;
     border: 1px solid #1a2631;
     background-color: #f2b531;
     padding: 1%;
-    margin-top: 105px;}
+    margin-top: 105px;
+    text-shadow: 2px 2px lightgrey;}
 
 h3 {color: #1a2631;
     font-family: "Trebuchet MS", Verdana, sans-serif;
@@ -37,8 +38,6 @@ h4 {font-size: 1.50rem;
     font-weight: bolder;
     margin-bottom: 1%;
     margin-top: 2%;}
-
-
 
 h6 {font-size: 1.25rem;
     font-family: "Trebuchet MS", Verdana, sans-serif;
@@ -73,8 +72,22 @@ blockquote {font-size: 2.5rem;
             width: 68%;
             float: right;}
 
-#edu li {font-size: 1.2rem;
-        color: #1a2631;}
+table caption {visibility: hidden;}
+
+table, #edu th, #edu td {border: 1px solid black;
+                        border-collapse: collapse;
+                        padding: 5px;}
+
+#edu th {font-size: 1.4rem;
+    background-color: #1a2631;
+    color: #E7E6E0;        
+    font-variant: small-caps;}
+
+#edu td {font-size: 1.25rem;
+        text-align: center;}
+
+#edu tr:nth-child(even) {background-color: lightgray;}
+
 
 #exp li {font-size: 1.3rem;
     margin-left: 10%;
@@ -169,6 +182,42 @@ h5 {font-size: 1.50rem;
 #experience ul li ul li{font-size: 1.1rem;
                         padding: 2px;}
 
+
+/*reflection page accordian styling*/
+
+.container {width: 100%;
+            max-width: 800px;
+            margin: 0 auto;}
+
+.accordian {width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;}
+
+.accordian-header {display: block;
+                    padding: 15px 20px;
+                    background: #03878F;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    font-variant: small-caps;
+                    text-shadow: 2px 2px black;
+                    margin-bottom: 5px;}
+
+.accordian-content p {margin: 0 0 20px 0;
+                        font-size: 1.1rem;}
+
+.accordian-content {padding: 0;
+                    height: 0;
+                    overflow: hidden;
+                    transition: 1s ease-in;
+                    overflow-y: scroll;}
+
+.accordian-content:target {height: 300px;
+                            padding: 20px;}
+                   
+                    
+
 /*contact form styling*/
 
 #contact_form {margin-left: 10%;
@@ -221,10 +270,10 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
     aside, #edu, #exp  {float: none;
                         width: 100%;}
 
-    h1 {font-size: 2.125rem;}
-    h3 {font-size: 1.5rem;}
-    h5 {font-size: 1.25rem;}
-    #about p, p, #edu li, #exp li, footer, #experience li, .employdate, #experience ul li ul li {font-size: 1rem;
+    h1 {font-size: 2rem;}
+    h3 {font-size: 1.3rem;}
+    h5 {font-size: 1.2rem;}
+    #about p, p, #edu li, #exp li, footer, #experience li, .employdate, #experience ul li ul li, #edu th, #edu td, .accordian-content p {font-size: 1rem;
     }
     
 }

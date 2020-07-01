@@ -1,6 +1,6 @@
 /**********************************************
 *Description:  Navigation Style sheet for Cyndi Jennings Professional Website
-*Athhor:         Cyndi jennings
+*Author:         Cyndi jennings
 **********************************************/
 
 header {background: #1a2631;
@@ -96,7 +96,7 @@ nav a.active {background-color: #ed5958;
                  background-color: #1a2631;
                  text-decoration: underline;}    
     
-    #drop {visibility: hidden;
+    #drop {/*visibility: hidden;*/
            position: absolute;
            left: 155px;
            top: 160px;}
