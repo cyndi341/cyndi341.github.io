@@ -152,7 +152,8 @@ footer a:hover, a:focus {color: #ed5958;}
 footer a:visited, a:active {color: darkred;}
 
 
-#credit {color: #E7E6E0;
+#credit {display: flex;
+    color: #E7E6E0;
             padding-top: 25px;
             margin-left: 15px;
             font-size: .8rem;}
@@ -281,17 +282,29 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
     h1 {font-size: 2rem;}
     h3 {font-size: 1.3rem;}
     h5 {font-size: 1.2rem;}
-    #about p, p, #edu li, #exp li, footer, #experience li, .employdate, #experience ul li ul li, #edu th, #edu td, .accordian-content p {font-size: 1rem;
-    }
+    #about p, p, #edu li, #exp li, #experience li, .employdate, #experience ul li ul li, #edu th, #edu td, .accordian-content p  {font-size: 1rem;}
     
 }
 
 /*footer change for screens smaller then 700px*/   
 @media (max-width: 900px) {
-  .footer-flex {flex-flow: column nowrap;}
-  #cr {padding-left: 15px;}
-  footer a:link {padding-left: 15px;}
-}
+    footer {width: 100%;
+        height: 120px;
+        padding-top: 5px;
+        margin-top: 50px;}
+  
+    #firstline {flex-flow: column;
+            padding-left: 0;
+            padding-top: 10px;
+            align-items: center;}
+
+    #phone, #cr, #info a, #firstline i {font-size: .8rem;}
+
+    #credit {padding-top: 10px;
+            font-size: .6rem;
+            justify-content: center;
+            align-items: bottom;}
+        }
 
 /*Print stylesheet */
 
