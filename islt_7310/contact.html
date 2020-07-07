@@ -28,10 +28,11 @@ Tested:  June 26, 2020 in Firefox, Chrome, Edge, and Opera browsers
     <script src="https://kit.fontawesome.com/c9d3f532ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <style>
-       
+    
 
-    </style>
+
+    
+    
 </head>
 
 <body>
@@ -58,27 +59,27 @@ Tested:  June 26, 2020 in Firefox, Chrome, Edge, and Opera browsers
 
         <h2>Feel free to contact me using the form below!</h2>
 
-        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <form id="contact_form" action="" name="contact_form" >
         
-        <div class="row1">
-            <label for="name">Your name:</label><br />
-            <input id="name" class="input" name="name" type="text" value="" /><br />
-        </div>
+            <label>
+                Your Name
+                <input type="text" class="name"/>
+            </label>
 
-        <div class="row2">
-            <label for="email">Your email:</label><br />
-            <input id="email" class="input" name="email" type="text" value="" /><br />
-        </div>
-
-        <div class="row3">
-            <label for="message">Your message:</label><br />
-            <textarea id="message" class="input" name="message" ></textarea><br />
-        </div>
-    
-    <input id="submit_button" type="submit" value="Send email" />
-
-</form>
-        
+            <label>
+                Your Email
+                <input type="email" class="email"/>
+            </label>
+      
+            <label>
+                Your Message
+                <textarea></textarea>
+            </label>
+            <div class="status"></div>
+            <input id="submit_button" type="submit" value="Send email" />
+        </form>  
+      
+             
 
 <footer class="footer-flex"> 
         
