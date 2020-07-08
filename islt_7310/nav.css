@@ -57,8 +57,8 @@ nav a.active {background-color: #ed5958;
 
 /*change navbar font-size and padding to continue to fit on one line*/
 @media (max-width: 1070px) {
-                    nav ul {padding-left: 1%;}
-                    nav ul li {width: 120px;}
+                    nav ul {padding-left: 2%;}
+                    nav ul li {width: 155px;}
                     nav li a {font-size: 1.0rem;
                                 width: 70%;
                                 padding: 0%;}
