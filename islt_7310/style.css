@@ -50,7 +50,7 @@ h6 {font-size: 1.25rem;
 
 #about p {font-size: 1.4rem;}
 
-img {width: 300px;
+main img {width: 300px;
     float: right;
     padding: 2%;
     margin: 2% 0% 2% 3%;
@@ -95,8 +95,6 @@ tfoot th {font-size: .7rem;
     color: #E7E6E0;        
     font-variant: small-caps;
     padding: 5rem;}
-
-
 
 #exp li {font-size: 1.3rem;
     margin-left: 10%;
@@ -236,27 +234,34 @@ h5 {font-size: 1.50rem;
 
 /*contact form styling*/
 
-#contact_form {margin: auto; }
+#contact_form {margin: auto;
+             }
 
 label {font-family: "Trebuchet MS", Verdana, sans-serif;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    float: left;
+    width: 8rem;
+margin-bottom: 2px;}
   
-  #submit_button {background-color: #ed5958;
-    height: 32px;
-    width: 140px;
-    color: #e7e6e0;
-    font-weight: bold; }
-  
-  input, textarea {
-    display: block;
+#firstname, #lastname, #email, #message {display: block;
     background-color: #D3D3D3;
     color: black;
     width: 270px;
-    margin-bottom: 10px;
-    box-shadow: 5px 5px 2px 2px #696969; }
+    height: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 2px 2px #696969;}
 
-  textarea {height: 100px;}
+#message {height: 100px;}
+
+#submit_button {background-color: #ed5958;
+    height: 32px;
+    width: 140px;
+    color: #e7e6e0;
+    font-weight: bold; 
+    box-shadow: 5px 5px 2px 2px #696969;
+    margin-left: 8rem;}
 
 /*iframe video responsive design code*/
 .iframe-container {position: relative;
@@ -273,7 +278,7 @@ label {font-family: "Trebuchet MS", Verdana, sans-serif;
 
 /*change floats & font sizes for screens smaller then 1070px*/
 @media (max-width: 1070px) {
-    img {float: none;
+    main img {float: none;
         width: 60%;
         max-width: 300px;
         padding: 2%;
