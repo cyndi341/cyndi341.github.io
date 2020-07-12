@@ -270,11 +270,9 @@ margin-bottom: 2px;}
 /*iframe video responsive design code*/
 
 
-.iframe-container {position: relative;
+.iframe-container { position: relative;
                     width: 100%;
-                    padding-bottom: 56.25%;
-                    margin: 0 auto;
-                    height: 0;}
+                    padding-bottom: 56.25%;}
 
 .iframe-container iframe {position: absolute;
                         max-width: 735px !important;
