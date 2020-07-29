@@ -26,6 +26,7 @@ Tested:  June 26, 2020 in Firefox, Chrome, and Edge
     <title>Cyndi Jennings - Contact Me</title>
     <link rel="shortcut icon" href="images/favicon-16x16.ico">
     <script src="https://kit.fontawesome.com/c9d3f532ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     
@@ -67,7 +68,7 @@ Tested:  June 26, 2020 in Firefox, Chrome, and Edge
             
 
             <label for="email"><u>E</u>mail Address</label>
-                <input type="email" name="Email" id="email" accesskey="E" required placeholder="Enter your email address.">
+                <input type="email" name="Email" id="email" accesskey="E" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Enter your email address.">
                   
             <label for="message" ><u>M</u>essage</label>
                 <textarea name="message" id="message" accesskey="M" required placeholder="If you have any comments, please enter them here."></textarea>
